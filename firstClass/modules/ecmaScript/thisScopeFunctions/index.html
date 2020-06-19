@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scope Function (this)</title>
+</head>
+<body>
+
+    <button id="btn">Make my sandwich!</button>
+</body>
+
+<script>
+    const sandwich = {
+        bread: 'white',
+        cheese: 'cheddar',
+
+        prepare: function() {
+            return `I want a sandwich with ${this.bread} bread and ${this.cheese} cheese!`;
+        },
+
+        make: function() {
+            window.setTimeout(() => {
+                console.log( this.prepare() );
+            }, 500);
+        }
+
+    };
+    
+
+    const btn = document.getElementById('btn');
+    //change by arrow function try this.
+    btn.addEventListener('click', function() { sandwich.make() });
+
+</script>
+</html>

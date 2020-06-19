@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Destructuring Objects</title>
+</head>
+<body>
+</body>
+
+<script>
+    var data = {
+        name: 'Danilo',
+        surname: 'Oliveira',
+        birth: {
+          city: 'São Paulo',
+          date: '1900-01-08'
+        },
+    };
+    
+    // const name = data.name;
+    // const city = data.birth.city;
+    // console.log(surname);
+    // console.log(city);
+    // 
+    const { name } = data;
+    console.log(name);
+
+    const { city } = data.birth;
+
+    console.log(city);
+
+    [a, b, ...rest] = [10, 20, 30, 40, 50];
+
+    console.log(rest);
+    // expected output: Array [30,40,50]
+</script>
+</html>

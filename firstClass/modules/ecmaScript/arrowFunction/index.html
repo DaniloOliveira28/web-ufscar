@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Arrow Function</title>
+</head>
+<body>
+</body>
+
+<script>
+    const brazil = ['brasilia', 'são carlos', 'são paulo'];
+
+    const love = brazil.map(function(name) {
+        return `I love ${name}!`;
+    });
+
+    const loveArrow = brazil.map((name) => {
+        return `I love ${name}!`;
+    });
+
+    const loveArrowSingle = brazil.map(name => {
+        return `I love ${name}!`;
+    });
+
+    const loveArrowOneLine = brazil.map(name => `I love ${name}!`);
+
+    const loveChain = brazil
+                        .filter(name => name === 'Dublin')
+                        .map(name => `I love ${name}!`);
+
+    console.log(loveChain);
+</script>
+</html>
