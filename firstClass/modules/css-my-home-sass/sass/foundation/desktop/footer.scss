@@ -1,0 +1,12 @@
+.footer {
+  nav > ul {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 0;
+    }
+  }
+}

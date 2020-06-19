@@ -1,0 +1,10 @@
+.footer {
+  nav > ul {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
