@@ -22,8 +22,13 @@ export function doAuthentication(history) {
   return async (dispatch) => {
     login(
       (user) => {
-        dispatch({ type: LOGIN, user });
-        history.push('/admin');
+        console.log('xxx_user', user);
+        if(user){
+          dispatch({ type: LOGIN, user });
+          history.push('/admin');
+          console.log('xxx_admin', user);
+
+        } 
       }
     );
   }

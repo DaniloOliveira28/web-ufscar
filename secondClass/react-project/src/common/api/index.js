@@ -5,8 +5,13 @@ import { Connection } from './Connection';
  * selecionamos a forma de autenticação integrada com o Google Account.
  */
 export function login(dispatch) {
-  Connection.firebase().auth.signInWithPopup(Connection.firebase().googleProvider);
-  Connection.firebase().auth.onAuthStateChanged(dispatch);
+
+  var user = Connection.firebase().auth.currentUser;
+  console.log('xxx_currentUser', user)
+  if (!user) {
+    Connection.firebase().auth.signInWithPopup(Connection.firebase().googleProvider);
+    Connection.firebase().auth.onAuthStateChanged(dispatch);
+  }
 }
 
 /**

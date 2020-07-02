@@ -3,7 +3,7 @@ import './styles/notfound.scss';
 
 function NotFound() {
   return (
-    <div className='notfound'>Not Found</div>
+    <div className='notfound'>0 items Found</div>
   )
 }
 
