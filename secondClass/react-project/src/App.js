@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from './pages/home';
-import { Search } from './pages/search';
-import { Admin } from './pages/admin';
+import { Home } from './screens/home';
+import { Search } from './screens/search';
+import { Admin } from './screens/admin';
 import './styles/foundation/foundation.scss';
 
 function App() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Header from '../index';
+import Header from '../Header';
 
 jest.mock('../../Menu', () => () => <div className="menu" />);
 
