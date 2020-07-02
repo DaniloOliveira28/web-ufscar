@@ -1,0 +1,25 @@
+.airplane {
+  &__image {
+    background-image: url('../../../assets/images/room-mobile.jpg');
+    height: 600px;
+    margin: 0;
+    position: relative;
+    visibility: visible;
+  }
+
+  @media(min-width: 561px) {
+    &__image {
+      height: 0;
+      position: absolute;
+      visibility: hidden;
+    }
+  }
+
+  @media(min-width: 769px) {
+    &__image {
+      height: 0;
+      position: absolute;
+      visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import '../core/vars.scss';
+
+body {
+  background-color: $yellow-light;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+
+// Mobile first
+@import './body.scss';

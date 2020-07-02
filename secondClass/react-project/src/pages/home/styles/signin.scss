@@ -1,0 +1,29 @@
+@import '../../../styles/core/vars.scss';
+
+.signin {
+  background-color: $red;
+
+  hgroup {
+    h2,
+    h3 {
+      color: $white;
+      font-family: "Roboto-light", sans-serif;
+      font-size: 1em;
+      margin: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media(min-width: 561px) {
+    hgroup {
+      h2, h3 {
+        margin: 0;
+      }
+    }
+  }
+}

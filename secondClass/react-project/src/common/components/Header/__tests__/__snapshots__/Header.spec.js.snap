@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component Should render header properly 1`] = `
+<Header
+  fetchProperties={[MockFunction]}
+  history={
+    Object {
+      "location": Object {
+        "pathname": "/",
+      },
+      "push": [MockFunction],
+    }
+  }
+>
+  <header
+    className="header"
+  >
+    <nav
+      aria-label="navigation-main"
+    >
+      <Logotype>
+        <div
+          className="header__logotype"
+        />
+      </Logotype>
+      <Component>
+        <div
+          className="menu"
+        />
+      </Component>
+    </nav>
+    <section
+      className="main__search"
+    >
+      <h1>
+        Where do you want to go today?
+      </h1>
+      <div
+        className="main__container"
+      >
+        <Input
+          ariaLabel="search"
+          id="search"
+          name="search"
+          onChange={[Function]}
+          type="text"
+          value=""
+        >
+          <label
+            htmlFor="search"
+          >
+            <input
+              aria-label="search"
+              id="search"
+              name="search"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </label>
+        </Input>
+        <Button
+          alt="search"
+          className="button__search"
+          onClick={[Function]}
+          type="submit"
+        >
+          <button
+            alt="search"
+            className="button__search"
+            onClick={[Function]}
+            type="submit"
+          />
+        </Button>
+      </div>
+    </section>
+  </header>
+</Header>
+`;

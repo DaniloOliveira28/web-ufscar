@@ -1,0 +1,47 @@
+@import "../../../../styles/core/vars.scss";
+
+.header {
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      display: inline;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        background-color: $yellow-with-transparency;
+        text-align: center;
+        padding: 10px 0 10px;
+        width: 100%;
+      }
+
+      li a {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+  }
+
+  @media (min-width: 561px) {
+    nav {
+      flex-direction: row;
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 47px 0 0 40px;
+        align-items: center;
+
+        li {
+          background-color: inherit;
+          padding: 0px 20px 0 20px;
+          width: inherit;
+        }
+      }
+    }
+  }
+}

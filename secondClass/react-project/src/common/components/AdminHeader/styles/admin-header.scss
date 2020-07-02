@@ -1,0 +1,57 @@
+@import '../../../../styles/core/vars.scss';
+
+.admin-header {
+  background-color: #fff;
+
+  &__logout-container {
+    align-items: center;
+  }
+
+  &__logout {
+    padding-left: 20px;
+    padding-right: 10px;
+
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+
+  nav div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    background-color: #cc3333;
+    display: flex;
+    height: 110px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    width: 100px;
+    padding-top: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+  }
+
+  &__offer {
+    background: url("../../../../assets/images/btn-bed-admin.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+  }
+
+  &__community {
+    background: url("../../../../assets/images/btn-community-admin.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+  }
+}

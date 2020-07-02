@@ -1,0 +1,59 @@
+@import '../../../styles/core/vars.scss';
+
+.admin {
+  &__property {
+    display: flex;
+    margin-top: 10px;
+
+    img {
+      height: 135px;
+      margin-left: 30px;
+      margin-right: 60px;
+      margin-top: 54px;
+      width: auto;
+    }
+  }
+
+  &__form {
+    margin-top: 54px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  &__form p {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__normal {
+    height: 43px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #979797;
+    font-size: 1.5em;
+    background-color: #fad874;
+  }
+
+  &__description {
+    height: 100px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #979797;
+    font-size: 1.5em;
+    background-color: #fad874;
+  }
+
+  &__submit-btn {
+    margin-top: 20px;
+    width: 100px;
+    height: 37px;
+    border: 3px solid #979797;
+    font-size: 1em;
+    background-color: #d8d8d8;
+  }
+
+  &__submit-btn::before {
+    content: 'Save'
+  }
+}
