@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
-class AppLifeCycle extends Component {
+class LifeCycle extends Component {
   state = {
       name: ''
   }
@@ -19,7 +19,7 @@ class AppLifeCycle extends Component {
 
   static getDerivedStateFromProps(props, state) {
     console.log('>>> getDerivedStateFromProps ')
-    return props;
+    return null;
     /*
     • chamado antes de ser montado.
     • transformar os props
@@ -43,6 +43,7 @@ class AppLifeCycle extends Component {
 
   componentDidUpdate(){
     console.log('>>> componentDidUpdate ');
+
     /*
     • invocado imediatamente depois que ocorrer uma ação
     */
@@ -54,9 +55,8 @@ class AppLifeCycle extends Component {
     • invocado imediatamente antes do componente estiver desmontado.
     */
   }
-  render(props) {
-    console.log('>>> render ')
-
+  render() {
+    console.log('>>> render ');
     return (
       <div>
         <section>
@@ -64,7 +64,8 @@ class AppLifeCycle extends Component {
             <h3> LifyCycle </h3>
           </header>
           <div>
-           <p> {`Open your console ${this.state.name}`} </p>
+          <p> {`Open your console ${this.state.name}`} </p>
+          <p> {`Open your console ${this.props.name}`} </p>
           </div>
         </section>
       </div>
@@ -72,4 +73,4 @@ class AppLifeCycle extends Component {
   }
 }
 
-export default AppLifeCycle;
+export default LifeCycle;

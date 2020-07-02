@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import AppLifeCycle from './AppLifeCycle';
+import LifeCycle from './LifeCycle';
 
 class App extends Component {
   state = {
@@ -40,7 +40,8 @@ class App extends Component {
 
           </div>
           <div>
-            {this.state.showLifecycleCompoent ? <AppLifeCycle name={this.state.name}/> : null}
+            {this.state.showLifecycleCompoent ? <LifeCycle name={this.state.name} /> : null} 
+            {/* key={this.state.name} */}
           </div>
         </section>
       </div>
