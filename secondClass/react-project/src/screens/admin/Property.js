@@ -4,6 +4,8 @@ import { Input } from '../../common/components/Input';
 import PropTypes from 'prop-types';
 import { Loading } from '../../common/components/Loading';
 import './styles/admin-property.scss';
+import House from "./../../assets/images/result01.jpg";
+
 
 class Property extends Component {
   constructor(props) {
@@ -46,7 +48,7 @@ class Property extends Component {
     const { address, city, country, description, loading } = this.state;
     return (
       <article className="admin__property">
-        <img src="./images/result01.jpg" alt="house" />
+        <img src={House} alt="house" />
         <div className="admin__form">
           {loading && (<Loading
             type={'spinningBubbles'}

@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import House from "./../../assets/images/result01.jpg";
 
 function Property(props) {
   const { data } = props;
   return (
     <article>
-      <img src="./images/result01.jpg" className="property__image" alt="house" />
+      <img src={House} className="property__image" alt="house" />
       <div className="property__details">
         <p className="property__details__header">
           Country: {data.country}

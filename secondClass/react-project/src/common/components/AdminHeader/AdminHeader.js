@@ -8,25 +8,8 @@ class AdminHeader extends Component {
   constructor(props) {
     super(props)
     this.onLogout = this.onLogout.bind(this);
-    this.onGetStyle = this.onGetStyle.bind(this);
   }
 
-  onGetStyle() {
-    const { user } = this.props.info;
-    return {
-      background: `url(${user.photoURL})`,
-      backgroundRepeat: 'no-repeat',
-      display: 'flex',
-      justifycontent: 'center',
-      backgroundPosition: 'center',
-      width: '60px',
-      height: '60px',
-      position: 'absolute',
-      marginLeft: '20px',
-      marginTop: '10px',
-      borderRadius: '50%'
-    };
-  }
 
   onLogout() {
     this.props.doLogout();
@@ -47,9 +30,9 @@ class AdminHeader extends Component {
           </div>
           <ul>
             <li>
-              <div>
-                <div style={this.onGetStyle()} />
-                <span>Profile</span>
+              <div className="admin-header__div_avatar">
+                 <span>Profile</span>
+                  <img src={user.photoURL} alt="Avatar" class="avatar" />
               </div>
             </li>
             <li className="admin-header__offer"><span>Offer</span></li>
