@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% 'Roboto', arial, sans-serif;
+  background: #f5f5f5;
+}
+
+form {
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 23.75rem;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+h1 {
+  margin-top: 2%;
+  margin-bottom: 3.236rem;
+  text-align: center;
+  font-size: 1.618rem;
+}
+
+.form-group {
+  padding: 0;
+  border: 0;
+}
+
+.form-group + .form-group {
+  margin-top: 1rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-size: .75rem;
+  text-transform: uppercase;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+input,
+textarea {
+  display: block;
+  padding: .5rem .75rem;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #eee;
+  border-left: 0;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  border-bottom-color: #ffab00;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn {
+  display: inline-block;
+  padding: .75rem 1rem;
+  width: 100%;
+  margin-top: 1.618rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: #950aff;
+  border: 1px solid transparent;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.btn:focus, .btn:hover {
+  background-color: #c78eff;
+  box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
+}
+.btn:focus {
+  outline: 0;
+}
