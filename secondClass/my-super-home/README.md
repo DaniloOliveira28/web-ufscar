@@ -52,6 +52,8 @@
   Create the styles folder and import the foundation to the App.js
 
 
-# Step 10 - Add home component
+# Step 10 - Add home screen
 
-# Step 11 - Add search component
+# Step 11 - Add search screen
+
+# Step 12 - Add admin screen
