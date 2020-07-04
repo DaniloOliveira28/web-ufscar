@@ -41,4 +41,9 @@
   copy src/assets
 
 # Step 7 - Configure the routes
-  lets use the react-router
+  lets use the react-router to configure the admin; home and signup routes
+
+# Step 8 - Add redux store
+  lets make the store available to the application.
+  The store will store the user personal data
+  The store will have 4 actions: GET_PROPERTIES, LOGIN, LOGOUT, SAVE_PROPERTY
