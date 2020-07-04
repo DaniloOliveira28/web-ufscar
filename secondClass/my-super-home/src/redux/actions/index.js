@@ -1,7 +1,7 @@
 import {
   filterProperties,
-  // login,
-  // saveProperty as saveApiProperty
+  login,
+  saveProperty as saveApiProperty
 } from '../../api';
 
 export const GET_PROPERTIES = 'GET_PROPERTIES';
@@ -18,21 +18,21 @@ export function fetchProperties(search) {
   }
 }
 
-// export function doAuthentication(history) {
-//   return async (dispatch) => {
-//     login(
-//       (user) => {
-//         console.log('xxx_user', user);
-//         if(user){
-//           dispatch({ type: LOGIN, user });
-//           history.push('/admin');
-//           console.log('xxx_admin', user);
+export function doAuthentication(history) {
+  return async (dispatch) => {
+    login(
+      (user) => {
+        console.log('xxx_user', user);
+        if(user){
+          dispatch({ type: LOGIN, user });
+          history.push('/admin');
+          console.log('xxx_admin', user);
 
-//         } 
-//       }
-//     );
-//   }
-// }
+        } 
+      }
+    );
+  }
+}
 
 export function doLogout() {
   return async (dispatch) => {

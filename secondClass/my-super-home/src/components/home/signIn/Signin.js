@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from '../../button/index';
-import { withRouter } from 'react-router-dom';
 import './signin.scss';
 
 const Signin = props => {
   const { doAuthentication, history } = props;
 
-  const onLogin = () => {}
+  const onLogin = () => {
+    doAuthentication(history);
+  }
 
   return (
     <section className="signin">
@@ -33,5 +34,5 @@ Signin.propTypes = {
   doAuthentication: PropTypes.func.isRequired
 }
 
-export default withRouter(Signin)
+export default Signin;
 
