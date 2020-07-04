@@ -22,11 +22,11 @@ export function doAuthentication(history) {
   return async (dispatch) => {
     login(
       (user) => {
-        console.log('xxx_user', user);
         if(user){
+          console.log('xxx_user_loggedIN', user);
+
           dispatch({ type: LOGIN, user });
           history.push('/admin');
-          console.log('xxx_admin', user);
 
         } 
       }
@@ -40,11 +40,11 @@ export function doLogout() {
   }
 }
 
-// export function saveProperty(property) {
-//   return async (dispatch) => {
-//     saveApiProperty(property)
-//       .then(() =>
-//         dispatch({ type: SAVE_PROPERTY, property })
-//       );
-//   }
-// }
+export function saveProperty(property) {
+  return async (dispatch) => {
+    saveApiProperty(property)
+      .then(() =>
+        dispatch({ type: SAVE_PROPERTY, property })
+      );
+  }
+}

@@ -1,6 +1,6 @@
 import { Property } from './Property';
 import { connect } from 'react-redux';
-import { saveProperty } from '../../actions';
+import { saveProperty } from '../../../redux/actions';
 
 const mapStateToProps = state => {
   return {
