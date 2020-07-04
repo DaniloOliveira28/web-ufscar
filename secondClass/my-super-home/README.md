@@ -39,3 +39,6 @@
 
 # Step 6 - Create the assets folders
   copy src/assets
+
+# Step 7 - Configure the routes
+  lets use the react-router
