@@ -1,0 +1,85 @@
+@import '../../../styles/core/vars.scss';
+
+@mixin image($file) {
+  background: url($file);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 1px 1px $black, 0 0 0.2em $black, 0 0 0.4em $white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+
+  h1 {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  aside {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  nav > ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+      height: 204px;
+      list-style-type: none;
+      margin-bottom: 5px;
+      width: 480px;
+
+      span {
+        color: $white;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__travelling {
+    @include image("../../../assets/images/travelling.jpg");
+  }
+  &__hosting {
+    @include image("../../../assets/images/hosting.jpg");
+  }
+  &__tellstory {
+    @include image("../../../assets/images/tellStory.jpg");
+  }
+
+  @media (min-width: 561px) {
+    nav > ul {
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  @media(min-width: 769px) {
+    nav > ul {
+      flex-direction: row;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}

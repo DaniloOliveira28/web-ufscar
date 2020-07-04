@@ -1,0 +1,74 @@
+@import '../../../../styles/core/vars.scss';
+
+.main {
+  &__search {
+    align-items: center;
+    background-color: $yellow;
+    display: flex;
+    height: 178px;
+    flex-direction: column;
+    justify-content: center;
+
+    &__search {
+      margin-top: 30px;
+      background-color: transparent;
+    }
+
+    h1 {
+      color: $white;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.7em;
+      font-style: italic;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px $black, 0 0 0.03em $black, 0 0 0.05em $black;
+      text-align: center;
+    }
+
+    .main__container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      label > input {
+        width: 252px;
+        height: 27px;
+        font-size: 1em;
+        padding: 0.3em;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @media (min-width: 561px) {
+    &__search {
+      background-color: transparent;
+      height: initial;
+
+      h1 {
+        text-shadow: 2px 1px 2px $black, 0 0 1em $black, 0 0 0.2em $black;
+      }
+
+      .main {
+        &__container {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+    }
+
+    &__search-btn {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 769px) {
+    &__search > h1 {
+      text-shadow: 6px 1px 2px $blue-light, 0 0 1em $blue-light, 0 0 0.2em $blue-dark;
+    }
+  }
+}

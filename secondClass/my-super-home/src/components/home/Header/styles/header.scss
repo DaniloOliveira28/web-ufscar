@@ -1,0 +1,24 @@
+@import '../../../../styles/core/vars.scss';
+
+.header {
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  @media (min-width: 561px) {
+    height: 316px;
+    background-image: url("../../../../assets/images/room-tablet.jpg");
+    background-color: red;
+  }
+
+  @media (min-width: 769px) {
+    height: 316px;
+    background-image: url('../../../../assets/images/room.jpg');
+  }
+
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

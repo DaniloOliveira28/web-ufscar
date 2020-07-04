@@ -47,3 +47,9 @@
   lets make the store available to the application.
   The store will store the user personal data
   The store will have 4 actions: GET_PROPERTIES, LOGIN, LOGOUT, SAVE_PROPERTY
+
+# Step 9 - Configure and Add scss to out application
+  Create the styles folder and import the foundation to the App.js
+
+
+# Step 10 - Add home component
