@@ -53,3 +53,5 @@
 
 
 # Step 10 - Add home component
+
+# Step 11 - Add search component
