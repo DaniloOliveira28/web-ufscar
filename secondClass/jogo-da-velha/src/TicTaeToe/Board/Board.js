@@ -1,5 +1,6 @@
 import React from 'react';
 import Square from '../Square/Square';
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 
 import './Board.css';
 
@@ -14,10 +15,11 @@ const Board = (props) => {
 
   return (
     <div>
+      <ErrorBoundary>
       <div className="board-row">
-        {renderSquare(0)}
-        {renderSquare(1)}
-        {renderSquare(2)}
+          {renderSquare(0)}
+          {renderSquare(1)}
+          {renderSquare(2)}
       </div>
       <div className="board-row">
         {renderSquare(3)}
@@ -29,6 +31,7 @@ const Board = (props) => {
         {renderSquare(7)}
         {renderSquare(8)}
       </div>
+      </ErrorBoundary>
     </div>
   );
 }

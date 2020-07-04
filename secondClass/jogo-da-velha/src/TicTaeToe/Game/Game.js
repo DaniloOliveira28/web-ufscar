@@ -34,7 +34,7 @@ const Game = () => {
   if (winner) {
     status = "Winner: " + winner;
   } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
+    status = "Next player: " + (xIsNext ? "X" : "T");
   }
 
 
@@ -46,7 +46,7 @@ const Game = () => {
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
-    squares[i] = xIsNext ? "X" : "O";
+    squares[i] = xIsNext ? "X" : "T";
 
     setHistory(history.concat([
       {
