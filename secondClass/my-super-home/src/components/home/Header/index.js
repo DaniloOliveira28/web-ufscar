@@ -1,7 +1,11 @@
 import Header from './Header';
+import { connect } from 'react-redux';
 
+import { withRouter } from 'react-router-dom';
+import { fetchProperties } from '../../../redux/actions';
 
-export default Header;
+const mapDispatchToProps = {
+  fetchProperties
+}
 
-
-
+export default connect(null, mapDispatchToProps)(withRouter(Header));

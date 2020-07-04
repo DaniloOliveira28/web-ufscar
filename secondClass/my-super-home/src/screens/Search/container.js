@@ -7,4 +7,4 @@ const mapStateToProps = state => {
   }
 };
 
-export default Search;
+export default connect(mapStateToProps)(Search);

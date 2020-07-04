@@ -1,22 +1,22 @@
-// import {
-//   filterProperties,
-//   login,
-//   saveProperty as saveApiProperty
-// } from '../common/api/';
+import {
+  filterProperties,
+  // login,
+  // saveProperty as saveApiProperty
+} from '../../api';
 
 export const GET_PROPERTIES = 'GET_PROPERTIES';
 export const LOGIN = 'LOGIN';
 export const LOGOUT = 'LOGOUT';
 export const SAVE_PROPERTY = 'SAVE_PROPERTY';
 
-// export function fetchProperties(search) {
-//   return async (dispatch) => {
-//     return await filterProperties(search)
-//       .then((snapshot) => {
-//         dispatch({ type: GET_PROPERTIES, value: snapshot });
-//       })
-//   }
-// }
+export function fetchProperties(search) {
+  return async (dispatch) => {
+    return await filterProperties(search)
+      .then((snapshot) => {
+        dispatch({ type: GET_PROPERTIES, value: snapshot });
+      })
+  }
+}
 
 // export function doAuthentication(history) {
 //   return async (dispatch) => {

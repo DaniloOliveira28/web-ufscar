@@ -11,6 +11,7 @@ import './styles/main.scss';
 const TO_SEARCH = '/search';
 
 const Header = (props) => {
+  const { fetchProperties, history } = props;
 
   const [search, setSearch] = useState('');
 
@@ -18,7 +19,15 @@ const Header = (props) => {
     setSearch(data.target.value);
   }
 
-  const onClick = () => {}
+  const onClick = () => {
+    fetchProperties(search)
+    .then(() => {
+      // redicionar apenas quando estiver em páginas diferentes de search
+      if (history.location.pathname !== TO_SEARCH) {
+        history.push(TO_SEARCH)
+      }
+    });
+  }
 
   return (
     <header className="header">

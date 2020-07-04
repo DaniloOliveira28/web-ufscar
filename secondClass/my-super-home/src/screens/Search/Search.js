@@ -9,12 +9,12 @@ import './Search.scss';
 class Search extends Component {
   constructor(props) {
     super(props);
-    // this.getProperties = this.getProperties.bind(this);
+    this.getProperties = this.getProperties.bind(this);
   }
 
   getProperties() {
-    // const { properties } = this.props;
-    // return Object.keys(properties);
+    const { properties } = this.props;
+    return Object.keys(properties);
   }
 
   render() {
