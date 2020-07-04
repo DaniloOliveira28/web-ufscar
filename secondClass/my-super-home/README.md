@@ -61,3 +61,5 @@
 # Step 13 - Add search houses
 
 # Step 14 - Add login authentication
+
+# Step 15 - Add logout authentication

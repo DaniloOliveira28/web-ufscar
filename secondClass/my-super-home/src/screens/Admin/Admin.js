@@ -1,5 +1,5 @@
 import React from  'react';
-import { AdminHeader } from '../../components/admin/Header';
+import AdminHeader from '../../components/admin/Header';
 import {Property} from '../../components/admin/Property/Property';
 
 function Admin() {
