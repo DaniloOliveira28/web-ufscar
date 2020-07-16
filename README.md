@@ -1,8 +1,12 @@
 In this repo I will gather all content used on my classes to the FrontEnd Developer course at UFSCar.
 
 
-Slides:
-https://docs.google.com/presentation/d/1CK44BvR6ecum4r69-b5WdsXK8Lc1ocdSUef722iE4pM/edit?usp=drive_web&ouid=111786298757313265879
+First Class:
+https://docs.google.com/presentation/d/1CK44BvR6ecum4r69-b5WdsXK8Lc1ocdSUef722iE4pM
+
+Second Class:
+https://docs.google.com/presentation/d/1gaIT-IUW_sjSwkCAys6P5Jl-3G6B9W5ClLIk4BCEdjk
+
 
 --
 
