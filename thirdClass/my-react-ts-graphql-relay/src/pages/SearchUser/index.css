@@ -1,0 +1,17 @@
+.SearchUser-toolbar {
+  margin: 15px 0;
+}
+
+.SearchUser-list-header {
+  padding: 5px;
+}
+
+.SearchUser-list {
+  min-height: 100%;
+  padding: 10px 0;
+}
+
+.SearchUser-list-footer {
+  padding: 5px;
+  text-align: center;
+}
