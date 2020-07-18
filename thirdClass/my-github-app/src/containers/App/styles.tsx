@@ -8,4 +8,5 @@ export const StyledContainer = styled(Box)`
 
 export const StyledContent = styled(Box)`
   height: calc(100vh - 65px);
+  margin: 16px;
 `;
