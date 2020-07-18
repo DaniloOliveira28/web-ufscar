@@ -19,7 +19,11 @@ const UserListItem = (props:UserListItemProps) => {
   console.log(user);
   
   return (
-    <ListItem button>
+    <ListItem button onClick={() => {
+        var win = window.open(user.url as string, '_blank');
+        win?.focus();
+
+    }}>
       <ListItemAvatar>
         <Avatar
           alt={`Avatar`}

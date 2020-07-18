@@ -20,7 +20,11 @@ const OrganizationListItem = (props:OrganizationListItemProps) => {
   console.log(organization);
   
   return (
-    <StyledListItem button>
+    <StyledListItem button onClick={() => {
+        var win = window.open(organization.url as string, '_blank');
+        win?.focus();
+
+    }}>
       <ListItemAvatar>
         <Avatar
           alt={`Avatar`}
