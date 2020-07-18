@@ -14,19 +14,23 @@
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.1",
     "babel-plugin-relay": "^10.0.0",
+    "dotenv": "^8.2.0",
+    "dotenv-cli": "^3.2.0",
     "graphql": "^15.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-relay": "^10.0.0",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.1",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "update-graphql-schema": "^0.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "update-schema": "yarn dotenv node scripts/upgrade_github_schema.js"
   },
   "eslintConfig": {
     "extends": "react-app"
