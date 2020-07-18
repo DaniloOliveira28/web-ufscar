@@ -30,7 +30,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "update-schema": "yarn dotenv node scripts/upgrade_github_schema.js"
+    "update-schema": "yarn dotenv node scripts/upgrade_github_schema.js",
+    "relay": "relay-compiler --src ./src/ --schema ./data/schema.graphql --extensions=js jsx tsx"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "relay-compiler": "^10.0.0",
     "relay-config": "^10.0.0"
   }
 }
