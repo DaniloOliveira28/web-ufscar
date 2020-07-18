@@ -5,19 +5,31 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Checkbox from '@material-ui/core/Checkbox';
 import Avatar from '@material-ui/core/Avatar';
+import {useFragment} from 'relay-hooks';
+import {fragmentSpec} from './UserListItem.gql';
+import {UserItem_user$key} from './__generated__/UserItem_user.graphql';
 
-const UserListItem = () => {
+type UserListItemProps = {
+  user: UserItem_user$key;
+};
+
+const UserListItem = (props:UserListItemProps) => {
+
+  const user = useFragment(fragmentSpec, props.user)
+  console.log(user);
+  
   return (
     <ListItem button>
       <ListItemAvatar>
         <Avatar
           alt={`Avatar`}
-          src={`/static/images/avatar/1.jpg`}
+          src={user?.avatarUrl ? user?.avatarUrl as string : 'https://www.w3schools.com/w3images/avatar6.png'}
         />
       </ListItemAvatar>
-      <ListItemText primary={`Line item`} />
+      <ListItemText primary={`${user.name} (${user.login})`} />
       <ListItemSecondaryAction>
         <Checkbox
+          checked={user.viewerIsFollowing}
           edge="end"
         />
       </ListItemSecondaryAction>
