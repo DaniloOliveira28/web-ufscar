@@ -5,7 +5,13 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import FormControl from '@material-ui/core/FormControl';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 
-const SearchBox = () => {
+type SearchBoxProps = {
+  value: string;
+  onChange: (newValue:string) => void;
+};
+
+const SearchBox = (props:SearchBoxProps) => {
+  const {value, onChange} = props;
 
   return (
     <div>
@@ -17,6 +23,12 @@ const SearchBox = () => {
             <InputAdornment position="start">
               <AccountCircle />
             </InputAdornment>
+          }
+          value={value}
+          onChange={
+            (event) => {
+              onChange(event.target.value)
+            }
           }
         />
       </FormControl>
