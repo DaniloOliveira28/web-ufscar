@@ -1,10 +1,23 @@
 import React from 'react';
+import {useQuery} from 'relay-hooks';
 
-const ResultBox = () => {
+import {searchQuery } from './ResultBox.gql';
+
+type ResultBoxProps = {
+  query: string;
+}
+const ResultBox = (props:ResultBoxProps) => {
+  const {query} = props;
+  
+  const variables = {
+    query,
+    count: 6
+  }
+  const {props: result, error, retry, cached} = useQuery(searchQuery, variables);
 
   return (
     <div>
-      ResulBox
+      ResulBox: {JSON.stringify(result)}
     </div>
   )
 }
