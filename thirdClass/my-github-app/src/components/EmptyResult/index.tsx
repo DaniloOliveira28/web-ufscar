@@ -7,8 +7,8 @@ const EmptyResult = () => {
 
   return (
     <Box>
+      <Typography variant="body1">Aguardando um texto de busca!</Typography>
       <img src={empty} />
-      <Typography variant="body1">Adicione um texto!</Typography>
     </Box>
   
   )
