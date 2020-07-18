@@ -1,13 +1,15 @@
 import React from 'react';
 import {Box} from '@material-ui/core';
-import NavBar from '../components/NavBar';
-import Main from '../components/Main';
-import Footer from '../components/Footer';
+import NavBar from '../../components/NavBar';
+import Main from '../../components/Main';
+import Footer from '../../components/Footer';
+
+import { StyledBox } from './styles';
 
 function App() {
   
   return (
-    <Box>
+    <StyledBox>
       <Box id='header'>
         <NavBar />
       </Box>
@@ -17,7 +19,7 @@ function App() {
       <Box id='footer'>
         <Footer />
       </Box>
-    </Box>
+    </StyledBox>
   );
 }
 
