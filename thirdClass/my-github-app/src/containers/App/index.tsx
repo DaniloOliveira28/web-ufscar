@@ -4,22 +4,25 @@ import NavBar from '../../components/NavBar';
 import Main from '../../components/Main';
 import Footer from '../../components/Footer';
 
-import { StyledBox } from './styles';
+import { StyledContainer, StyledContent } from './styles';
 
 function App() {
   
   return (
-    <StyledBox>
+    <StyledContainer>
       <Box id='header'>
         <NavBar />
       </Box>
-      <Box id='content'>
-        <Main />
-      </Box>
-      <Box id='footer'>
-        <Footer />
-      </Box>
-    </StyledBox>
+      <StyledContent>
+        <Box id='content'>
+          <Main />
+        </Box>
+        <Box id='footer'>
+          <Footer />
+        </Box>
+      </StyledContent>
+
+    </StyledContainer>
   );
 }
 
