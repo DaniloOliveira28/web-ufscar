@@ -1,5 +1,7 @@
 import React from 'react';
 import {Box} from '@material-ui/core';
+import Skeleton from '@material-ui/lab/Skeleton';
+
 import {useQuery} from 'relay-hooks';
 import UserList from '../UserList';
 
@@ -16,13 +18,26 @@ const ResultBox = (props:ResultBoxProps) => {
     query,
     count: 6
   }
-  const {props: result, error, retry, cached} = useQuery<ResultBox_Query>(searchQuery, variables);
+  const {props: result, error} = useQuery<ResultBox_Query>(searchQuery, variables);
 
+
+  if (result && result.search) {
+    return (
+      <Box>
+        Total de items: {result?.search?.userCount ?? 0}
+        <UserList userEdges={result?.search} />
+      </Box>
+    );
+  } else if (error) {
+    return <div>{error.message}</div>;
+  }
   return (
-    <Box>
-      Total de items: {result?.search?.userCount ?? 0}
-      <UserList />
-    </Box>
-  )
+  <div>
+    <Skeleton />
+    <Skeleton />
+    <Skeleton />    
+  </div>);
+
+
 }
 export default ResultBox;
