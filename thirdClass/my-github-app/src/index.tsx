@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
+import {RelayEnvironmentProvider} from 'relay-hooks';
+import modernEnvironment from "./relay/createRelayEnvironment";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <RelayEnvironmentProvider environment={modernEnvironment}>
     <App />
-  </React.StrictMode>,
+  </RelayEnvironmentProvider>,
   document.getElementById('root')
 );
 

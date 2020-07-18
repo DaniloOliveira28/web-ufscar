@@ -21,6 +21,7 @@
     "react-dom": "^16.13.1",
     "react-relay": "^10.0.0",
     "react-scripts": "3.4.1",
+    "relay-hooks": "^3.5.1",
     "styled-components": "^5.1.1",
     "typescript": "^3.9.7",
     "update-graphql-schema": "^0.2.1"
