@@ -5,19 +5,41 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Checkbox from '@material-ui/core/Checkbox';
 import Avatar from '@material-ui/core/Avatar';
-import {useFragment} from 'relay-hooks';
-import {fragmentSpec} from './UserListItem.gql';
-import {UserItem_user$key} from './__generated__/UserItem_user.graphql';
+import {useFragment, useMutation} from 'relay-hooks';
+import {fragmentSpec, followUser, unfollowUser} from './UserListItem.gql';
+import {UserListItem_user$key} from './__generated__/UserListItem_user.graphql';
+import { UserListItemFollow_Mutation } from './__generated__/UserListItemFollow_Mutation.graphql'
+import { UserListItemUnFollow_Mutation } from './__generated__/UserListItemUnFollow_Mutation.graphql'
 
 type UserListItemProps = {
-  user: UserItem_user$key;
+  user: UserListItem_user$key;
 };
 
 const UserListItem = (props:UserListItemProps) => {
 
   const user = useFragment(fragmentSpec, props.user)
-  console.log(user);
-  
+  const [commitFollowUser] = useMutation<UserListItemFollow_Mutation>(followUser);
+  const [commitUnfollowUser] = useMutation<UserListItemUnFollow_Mutation>(unfollowUser);
+
+  const handleFollow = (followStatus:boolean) => {
+    if(followStatus === true) {
+      commitUnfollowUser({
+        variables: {
+          input: {
+            userId:user.id
+          },
+        },
+        })
+    } else {
+      commitFollowUser({
+        variables: {
+          input: {
+            userId:user.id
+          },
+        },
+      })
+    }
+  }
   return (
     <ListItem button onClick={() => {
         var win = window.open(user.url as string, '_blank');
@@ -34,6 +56,7 @@ const UserListItem = (props:UserListItemProps) => {
       <ListItemSecondaryAction>
         <Checkbox
           checked={user.viewerIsFollowing}
+          onClick={() => handleFollow(user.viewerIsFollowing)}
           edge="end"
         />
       </ListItemSecondaryAction>

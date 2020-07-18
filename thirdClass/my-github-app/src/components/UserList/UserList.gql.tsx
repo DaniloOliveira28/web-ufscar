@@ -31,7 +31,7 @@ export const fragmentSpec = graphql`
             ... on User {
               id
               __typename
-              ...UserItem_user
+              ...UserListItem_user
             }
             ... on Organization {
               id
