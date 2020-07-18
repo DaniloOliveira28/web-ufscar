@@ -21,11 +21,10 @@ const ResultBox = (props:ResultBoxProps) => {
   const {props: result, error} = useQuery<ResultBox_Query>(searchQuery, variables);
 
 
-  if (result && result.search) {
+  if (result && result) {
     return (
       <Box>
-        Total de items: {result?.search?.userCount ?? 0}
-        <UserList userEdges={result?.search} />
+        <UserList query={result} />
       </Box>
     );
   } else if (error) {
