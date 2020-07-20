@@ -7,6 +7,9 @@ https://docs.google.com/presentation/d/1CK44BvR6ecum4r69-b5WdsXK8Lc1ocdSUef722iE
 Second Class:
 https://docs.google.com/presentation/d/1gaIT-IUW_sjSwkCAys6P5Jl-3G6B9W5ClLIk4BCEdjk
 
+Third Class
+https://docs.google.com/presentation/d/1A00B_TQAoVTvJt5P7s3Gx-LvkkZE_0daib4IZZaNHMA/edit#slide=id.p
+
 
 --
 
