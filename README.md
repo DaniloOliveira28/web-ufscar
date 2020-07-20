@@ -1,13 +1,16 @@
 In this repo I will gather all content used on my classes to the FrontEnd Developer course at UFSCar.
 
 
-First Class:
+First Class: HTML + CSS + JS
+
 https://docs.google.com/presentation/d/1CK44BvR6ecum4r69-b5WdsXK8Lc1ocdSUef722iE4pM
 
-Second Class:
+Second Class: React + TDD
+
 https://docs.google.com/presentation/d/1gaIT-IUW_sjSwkCAys6P5Jl-3G6B9W5ClLIk4BCEdjk
 
-Third Class
+Third Class: TS + GRAPHQL + RELAY
+
 https://docs.google.com/presentation/d/1A00B_TQAoVTvJt5P7s3Gx-LvkkZE_0daib4IZZaNHMA/edit#slide=id.p
 
 
