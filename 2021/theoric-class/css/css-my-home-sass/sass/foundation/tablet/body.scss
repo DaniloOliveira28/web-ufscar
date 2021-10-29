@@ -1,0 +1,19 @@
+.body {
+  section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .signin {
+      &__btn {
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  hgroup {
+    width: 60%;
+  }
+}

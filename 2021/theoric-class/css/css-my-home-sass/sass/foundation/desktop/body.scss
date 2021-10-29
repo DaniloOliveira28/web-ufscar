@@ -1,0 +1,18 @@
+.body {
+  section {
+    flex-direction: column;
+    justify-content: center;
+    padding: 41px 42px;
+
+    hgroup {
+      width: 100%;
+    }
+
+    .signin {
+      &__btn {
+        margin-top: 10px;
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  height: 316px;
+  background-image: url("../../images/room-tablet.jpg");
+  background-color: $blue;
+
+  nav {
+    flex-direction: row;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 47px 0 0 40px;
+      align-items: center;
+
+      li {
+        background-color: inherit;
+        padding: 0px 20px 0 20px;
+        width: inherit;
+      }
+    }
+  }
+
+  &__logotype {
+    margin-bottom: 0;
+  }
+}
