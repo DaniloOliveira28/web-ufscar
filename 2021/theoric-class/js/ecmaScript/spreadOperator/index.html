@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spread Operator</title>
+</head>
+<body>
+</body>
+
+<script>
+
+  function sayTheBest(langA, langB, langC) {
+        console.log(`the ${langA} is better than ${langB} and better than ${langC}!`);
+    }
+
+    const ingredients = ['white', 'cheddar', 'barbecue'];
+
+    makeSandwich(...ingredients);
+    let front = ['react', 'vue', 'angular'];
+    let back = ['python', 'ruby', 'nodejs'];
+
+    // let fullStack = [];
+    // fullStack = fullStack.concat(front);
+    // fullStack.push('RxJS');
+    // fullStack = fullStack.concat(back);
+    // 
+    let fullStack = [...front, 'RxJS', ...back];
+
+    console.log(sayTheBest(...front));
+
+</script>
+</html>
