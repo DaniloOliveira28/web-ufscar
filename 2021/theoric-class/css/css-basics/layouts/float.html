@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Float CSS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+            float: left;
+            margin: 8px;
+        }
+        
+        div {
+            border: black dotted 1px;
+        }
+        
+        p.GFG {
+            clear: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div>
+        the float Property The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. The float property can have one of the following values: left - The element floats to the left of its container
+        right - The element floats to the right of its container none - The element does not float (will be displayed just where it occurs in the text). This is default inherit - The element inherits the float value of its parent In its simplest use,
+        the float property can be used to wrap text around images.
+    </div>
+    <p>In this example below, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+    <div>
+        <p>
+            <img src="../imgs/pineapple.jpg" alt="Pineapple" style="width:100px;height:100px;">imagem
+            <p class="GFG">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+                Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+                In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+        </p>
+    </div>
+    <small><a href="https://www.w3schools.com/css/css_float.asp"> reference: w3school</a></small>
+    <script src="" async defer></script>
+</body>
+
+</html>

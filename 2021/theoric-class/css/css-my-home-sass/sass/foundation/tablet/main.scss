@@ -1,0 +1,24 @@
+.main {
+  &__search {
+    background-color: transparent;
+    height: initial;
+
+    h1 {
+      text-shadow: 2px 1px 2px $black, 0 0 1em $black, 0 0 0.2em $black;
+    }
+
+    .main {
+      &__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+
+  &__search-btn {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.body {
+  background-color: $yellow-light;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+
+  section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 41px 42px;
+  }
+}

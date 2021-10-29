@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Selectors</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        h1 {
+            font-weight: 700;
+        }
+        
+        #lorem-section {
+            border: 0.1rem black dotted;
+        }
+        
+        span[key='27'] {
+            color: brown;
+            font-size: 40px;
+            font-weight: 700;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <main>
+        <h1> Teste </h1>
+        <section id="lorem-section">
+
+            SECTION...
+            <div>
+                <span key='27'>span 1</span>
+                <br>
+                <span key='28'>span 2</span>
+                <br>
+                <span>span 3</span>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

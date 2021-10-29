@@ -1,0 +1,28 @@
+.section {
+  background-color: $red;
+
+  hgroup {
+    h2,
+    h3 {
+      color: $white;
+      font-family: "Roboto-light", sans-serif;
+      font-size: 1em;
+      margin: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__signin-btn {
+    background: url("../../images/btn-signin.png");
+    border: 0;
+    cursor: pointer;
+    height: 43px;
+    margin-top: 10px;
+    width: 106px;
+  }
+}
