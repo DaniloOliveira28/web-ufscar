@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Anonymous Function</title>
+</head>
+<body>
+</body>
+
+<script>
+    setTimeout(function () {
+        console.log('Execute later after 1 second')
+    }, 1000);
+    
+    (function() {
+        console.log('Ok, I was called!');
+    })();
+
+</script>
+</html>
