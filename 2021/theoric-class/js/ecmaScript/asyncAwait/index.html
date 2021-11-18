@@ -9,30 +9,31 @@
 </body>
 
 <script>
-    async function getDeputies() {
-      
-      var myHeaders = new Headers();
-      myHeaders.append("accept", "application/json");
+    function getDeputies() {
 
-      var myInit = { 
-        method: 'GET',
-        headers: myHeaders,
-        mode: 'cors',
-        cache: 'default' 
-      };
-      const response = await fetch('https://dadosabertos.camara.leg.br/api/v2/deputados?ordem=ASC&ordenarPor=nome', myInit);
-      const data = await response.json();
-      console.log(data)
+        var myHeaders = new Headers();
+        myHeaders.append("accept", "application/json");
 
-      return data.dados.map(deputy => {
-          console.log(deputy.nome);
-      });
+        var myInit = {
+            method: 'GET',
+            headers: myHeaders,
+            mode: 'cors',
+            cache: 'default'
+        };
+        const response = fetch('https://dadosabertos.camara.leg.br/api/v2/deputados?ordem=ASC&ordenarPor=nome', myInit);
+        console.log('xxx_response', response)
+        const data = response.json();
+        console.log(data)
 
-      /* return fetch('https://dadosabertos.camara.leg.br/api/v2/deputados?ordem=ASC&ordenarPor=nome', myInit)
-        .then(data => data.json())
-        .then(data => data.dados.map(deputy => {
+        return data.dados.map(deputy => {
             console.log(deputy.nome);
-        })); */
+        });
+
+        // return fetch('https://dadosabertos.camara.leg.br/api/v2/deputados?ordem=ASC&ordenarPor=nome', myInit)
+        //     .then(data => data.json())
+        //     .then(data => data.dados.map(deputy => {
+        //         console.log(deputy.nome);
+        //     }));
     }
 
     getDeputies();

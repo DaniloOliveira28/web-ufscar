@@ -13,7 +13,10 @@
 
 
 function merge<T, U>(objA: T, objB: U) {
-  return Object.assign(objA, objB);
+  return {
+    ...objA,
+    ...objB
+  };
 }
 
 
@@ -21,8 +24,11 @@ function merge<T, U>(objA: T, objB: U) {
 //   return Object.assign(objA, objB);
 // }
 
-const mergedObj = merge({ name: 'Max', hobbies: ['Sports'] }, { age: 30 });
-console.log(mergedObj);
+const mergedObj = merge(
+  { name: 'Max', hobbies: ['Sports'] }, 
+  { age: 30 }
+);
+console.log(mergedObj.age);
 
 interface Lengthy {
   length: number;
@@ -47,4 +53,5 @@ function extractAndConvert<T extends object, U extends keyof T>(
   return 'Value: ' + obj[key];
 }
 
-extractAndConvert({ name: 'Max' }, 'name');
+extractAndConvert({ name: 'Max', birth: '123' }, 'birth');
+

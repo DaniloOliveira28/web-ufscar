@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Template Literals</title>
 </head>
+
 <body>
 </body>
 
@@ -12,23 +14,24 @@
         worst: 'USP'
     };
 
-    const text = 'Eu estudo na ' + universities.best + ' e não na ' + universities.worst+'!';
+    const text = 'Eu estudo na ' + universities.best + ' e não na ' + universities.worst + '!';
 
     const newText = `Eu estudo na ${universities.best} e não na ${universities.worst}!`;
 
-    const fruits = 'bannana' 
-                    + `\n`
-                    + 'orange'
-                    + `\n`
-                    + 'apple';
+    const fruits = 'bannana' +
+        `\n` +
+        'orange' +
+        `\n` +
+        'apple';
 
-    const newFruits = 
-          `bannana
+    const newFruits =
+        `bannana
           orange
           apple`;
 
     console.log(newFruits);
 
-    // console.log(newText);
+    console.log(newText);
 </script>
+
 </html>
