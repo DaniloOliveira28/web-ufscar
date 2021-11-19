@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Classes Intro</title>
 </head>
+
 <body>
 </body>
 
 <script>
-    
     class Planet {
-        constructor(kind, color) {
-            this.kind = kind;
+        constructor(name, color) {
+            this.name = name;
             this.color = color;
         }
 
         hello() {
-            console.log(`${this.kind} is ${this.color}!`);
+            console.log(`${this.name} is ${this.color}!`);
         }
 
         static info() {
@@ -34,4 +35,5 @@
     const mars = new Planet('mars', 'red');
     const earth = new Planet('earth', 'blue');
 </script>
+
 </html>

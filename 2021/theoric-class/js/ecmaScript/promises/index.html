@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Promises</title>
 </head>
+
 <body>
 </body>
 
-  <script>
-      var defer = new Promise((resolve, reject) => {
-          setTimeout(() => {
-              if (true) {
-                  resolve('Hello! It works!');
-              } else {
-                  reject('Error!');
-              }
-          }, 2000);
-      });
-      
-      defer
-          .then((data) => {
-              console.log(data);
-              return 'foo';
-          })
-          .then((data) => console.log(data))
-          .catch((err) => console.log(err));
+<script>
+    var defer = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (false) {
+                resolve('Hello! It works!');
+            } else {
+                reject('Error!');
+            }
+        }, 2000);
+    });
 
-  </script>
+    defer
+        .then((data) => {
+            console.log(data);
+            return 'foo';
+        })
+        .then((data) => console.log(data))
+        .catch((err) => console.error(err));
+</script>
+
 </html>

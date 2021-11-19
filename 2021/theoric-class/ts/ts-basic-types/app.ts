@@ -20,31 +20,39 @@
 // const AUTHOR = 2;
 
 //enum
-enum Role { ADMIN = 'ADMIN', READ_ONLY = 100, AUTHOR = 'AUTHOR' };
-
-const person = {
-  name: 'Maximilian',
-  age: 30,
-  hobbies: ['Sports', 'Cooking'],
-  role: Role.ADMIN
+enum Role { 
+  ADMIN = 'ADMIN', 
+  READ_ONLY = 100, 
+  AUTHOR = 'AUTHOR' 
 };
 
-// person.role.push('admin');
+const person: {
+  name: string | number,
+  age: number,
+  hobbies: string[],
+  role: Role,
+  test: [string, Role]
+} = {
+  name: 35,
+  age: 30,
+  hobbies: ['Sports', 'Cooking'],
+  role: Role.ADMIN,
+  test: ['string', Role.AUTHOR]
+};
+
+person.hobbies.push('admin');
+person.role = Role.READ_ONLY;
 // person.role[1] = 10;
 
 // person.role = [0, 'admin', 'user'];
 
 //array
-let favoriteActivities: string[];
-favoriteActivities = ['Sports'];
+// let favoriteActivities: string[];
+// favoriteActivities = ['Sports'];
 
-console.log(person.name);
+// console.log(person.name);
 
-for (const hobby of person.hobbies) {
-  console.log(hobby.toUpperCase());
-  // console.log(hobby.map()); // !!! ERROR !!!
-}
-
-if (person.role === Role.AUTHOR) {
-  console.log('is author');
-}
+// for (const hobby of person.hobbies) {
+//   console.log(hobby.toUpperCase());
+//   // console.log(hobby.map()); // !!! ERROR !!!
+// }

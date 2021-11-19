@@ -18,14 +18,20 @@
         b: 3,
         c: 4
     };
-    console.info(x); // 1
+    console.info('x', x); // 1
     console.info('remaining', remaining); // {a: 2, b: 3, c: 4}
 
-    let {...shallowClone
-    } = {
+    const objRef = {
         x: 1,
         foo: () => {}
-    };
+    }
+
+    let {
+        ...shallowClone
+    } = objRef;
+
+    shallowClone['x'] = 2;
+    console.info('objRef', shallowClone); // {x: 1, foo: ƒ}
     console.info('shallowClone', shallowClone); // {x: 1, foo: ƒ}
 
     let nestedObject = {

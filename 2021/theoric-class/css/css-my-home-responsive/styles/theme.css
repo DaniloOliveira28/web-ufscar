@@ -190,3 +190,62 @@
     position: absolute;
     visibility: hidden;
 }
+
+@media(min-width: 561px) and (max-width: 769px) {
+    .header {
+        background-image: url('../images/room-tablet.jpg');
+        background-color: #9bdcfc;
+    }
+    .main__search>h1 {
+        text-shadow: 2px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
+    }
+    .main__search>.main__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__search-btn {
+        margin-top: 10px;
+    }
+    .body>section {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .body>section>hgroup {
+        width: 60%;
+    }
+    .body>section>.signin__btn {
+        margin-left: 20px;
+    }
+    .footer>nav>ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer>nav>ul>li {
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width: 361px) {
+    .header {
+        background-image: url('../images/room.jpg');
+    }
+    .main__search>h1 {
+        text-shadow: 6px 1px 2px #55d6f9, 0 0 1em #55d6f9, 0 0 0.2em #4d97a6;
+    }
+    .main__search>.main__container {
+        display: flex;
+        justify-content: center;
+    }
+    .section__signin-btn {
+        margin-top: 10px;
+    }
+    .body>section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

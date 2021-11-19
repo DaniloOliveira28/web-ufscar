@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Destructuring Objects</title>
 </head>
+
 <body>
 </body>
 
@@ -11,20 +13,24 @@
         name: 'Danilo',
         surname: 'Oliveira',
         birth: {
-          city: 'São Paulo',
-          date: '1900-01-08'
+            city: 'São Paulo',
+            date: '1900-01-08'
         },
     };
-    
+
     // const name = data.name;
     // const city = data.birth.city;
     // console.log(surname);
     // console.log(city);
     // 
-    const { name } = data;
+    const {
+        name: name
+    } = data;
     console.log(name);
 
-    const { city } = data.birth;
+    const {
+        city: city
+    } = data.birth;
 
     console.log(city);
 
@@ -33,4 +39,5 @@
     console.log(rest);
     // expected output: Array [30,40,50]
 </script>
+
 </html>

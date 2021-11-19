@@ -7,7 +7,7 @@ function addNumber(num1: number, num2: number) {
 }
 
 button.addEventListener("click", function() {
-  console.log(addNumber(+input1.value, +input2.value));
+  console.log(addNumber((+input1.value), +input2.value));
 });
 
 //The + operator returns the numeric representation of the object. 
