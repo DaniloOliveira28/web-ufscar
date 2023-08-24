@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* General rules */
+
+.body {
+    background-color: #fad874;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.header {
+    height: 316px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header>nav {
+    display: flex;
+}
+
+.header>nav>ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 47px 0 0 40px;
+    align-items: center;
+}
+
+.header>nav>ul>li {
+    padding: 0px 20px 0 20px;
+}
+
+.header__logotype {
+    background-image: url('../images/logotype.png');
+    background-repeat: no-repeat;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 35px;
+    width: 137px;
+}
+
+.main__search-btn {
+    background: url('../images/btn-search.png');
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 101px;
+}
+
+.main__search>h1 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main__search>.main__container>label>input {
+    width: 252px;
+    height: 27px;
+    font-size: 1em;
+    padding: 0.3em;
+    margin-right: 10px;
+}
+
+.main__search {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Sign in */
+
+.body>section {
+    background-color: #cc3333;
+    padding: 41px 42px;
+}
+
+.main__signup>hgroup>h2 {
+    color: #fff;
+    font-family: 'Roboto-light', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+.main__signup>hgroup>h3 {
+    color: #fff;
+    font-family: 'Roboto-light', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+.section__signin-btn {
+    background: url('../images/btn-signin.png');
+    border: 0;
+    cursor: pointer;
+    height: 43px;
+    width: 106px;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.footer>h1 {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.footer>nav>ul>li {
+    height: 204px;
+    list-style-type: none;
+    width: 100%;
+}
+
+.footer>nav>ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer>aside {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer>nav>ul>li>span {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* Footer navigation */
+
+.footer__travelling {
+    background: url("../images/travelling.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-shadow: 2px 1px 1px #000, 0 0 0.2em #000, 0 0 0.4em #fff;
+}
+
+.footer__hosting {
+    background: url("../images/hosting.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 1px 1px #000, 0 0 0.2em #000, 0 0 0.4em #fff;
+}
+
+.footer__tellstory {
+    background: url("../images/tellStory.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 1px 1px #000, 0 0 0.2em #000, 0 0 0.4em #fff;
+}
+
+
+/* Airplane */
+
+.image__airplane {
+    height: 0;
+    position: absolute;
+    visibility: hidden;
+}
