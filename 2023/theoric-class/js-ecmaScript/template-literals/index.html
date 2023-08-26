@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title>Template Literals</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    const universities = {
+        best: 'UFSCar',
+        worst: 'USP'
+    };
+
+    const text = 'Eu estudo na ' + universities.best + ' e não na ' + universities.worst + '!';
+
+    const newText = `Eu estudo na ${universities.best} e não na ${universities.worst}!`;
+
+    console.log(text)
+    console.log(newText)
+    const fruits = 'bannana' +
+        `\n` +
+        'orange' +
+        `\n` +
+        'apple';
+
+    const newFruits =
+        `bannana
+          orange
+          apple`;
+
+    console.log(fruits);
+
+    console.log(newFruits);
+</script>
+
+</html>
