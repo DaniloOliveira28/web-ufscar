@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Selectors</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        /*Seletor universal*/
+        * {
+            font-family: 'Roboto', Arial, 'Times New Roman', Times, serif;
+            color: green;
+        }
+        /*Seletor por id*/
+        #content-id {
+            border: 3px solid green;
+        }
+        /*Seletor por classname*/
+        .teste {
+            font-size: 40px;
+            color: blue;
+        }
+        /*Seletor por atributo*/
+         h1 {
+            font-weight: 100;
+            background-color: red;
+        }
+        
+        /* Seletor por valor de atributo */
+        span[key='27'] {
+            color: brown;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <main>
+        <h1> Teste </h1>
+        <section id="lorem-section">
+
+            SECTION...
+            <div>
+                <span key='27'>span 27</span>
+                <br>
+                <span key='28'>span 28</span>
+                <br>
+                <span class='teste'>span 3</span>
+            </div>
+            <div id="content-id">
+                <p>
+                    Estamos na aula de desenvolvimento Web!
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
