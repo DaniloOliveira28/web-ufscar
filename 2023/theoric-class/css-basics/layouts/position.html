@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            height: 1500px;
+        }
+        main {
+            border: 1px solid black;
+        }
+        div.sticky {
+            position: sticky;
+            top: 0px;
+            border: 3px solid red;
+        }
+        div.static {
+            position: static;
+            border: 3px solid #73AD21;
+        }
+        
+         div.relative {
+            position: relative;
+            left: 50px;
+            top: 10px;
+            border: 3px solid #73AD21;
+            width: 300px;
+            height: 140px;
+        }
+        
+        div.fixed-bottom-right {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+        
+        div.fixed-bottom-left {
+            position: fixed;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+            bottom: 0;
+            left: 0;
+        }
+        
+        div.absolute {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            border: 3px solid blue;
+            top: 0px;
+            left: 0;
+        } 
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <h2>Positions</h2>
+        
+        <div class="sticky">
+            This div element has position: sticky;
+        </div>
+        
+        <div class="static">
+            This div element has position: static-default;
+        </div>
+        <div class="static">
+            This div element has position: static-default;
+        </div>
+        <div class="relative">
+            This div element has position: relative;
+        </div>
+        <div class="fixed-bottom-right">
+            This div element has position: fixed;
+        </div>
+        
+        <div class="fixed-bottom-left">This div element has position: fixeddddddddddddddd ;
+            <div class="absolute">This div element has position: absolute;</div>
+        </div>
+        
+    </main>
+
+</body>
+
+</html>
