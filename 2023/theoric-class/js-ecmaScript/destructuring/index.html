@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <title>Destructuring Objects</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    const data = {
+        name: 'Danilo',
+        surname: 'Oliveira',
+        birth: {
+            city: 'São Paulo',
+            date: '1900-01-08'
+        },
+    };
+
+    // const name = data.name;
+    // const city = data.birth.city;
+    // console.log(surname);
+    // console.log(city);
+    // 
+    const {
+        name: name
+    } = data;
+    console.log(name);
+
+    const {
+        city: city
+    } = data.birth;
+
+    console.log(city);
+    
+</script>
+
+</html>
