@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Promises Any</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    const p1 = Promise.reject(0);
+
+    const p2 = new Promise((resolve) => setTimeout(resolve, 100, 'quick'));
+
+    const p3 = new Promise((resolve) => setTimeout(resolve, 500, 'slow'));
+
+    const promises = [p1, p2, p3];
+
+    Promise.any(promises).then((value) => console.log(value));
+
+    // expected output: "quick"
+</script>
+
+</html>

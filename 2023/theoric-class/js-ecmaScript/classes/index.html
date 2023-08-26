@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Classes Intro</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    class Planet {
+        name = 'default';
+        color = 'black';
+        constructor(name, color) {
+            this.name = name;
+            this.color = color;
+        }
+
+        hello() {
+            console.log(`${this.name} is ${this.color}!`);
+        }
+
+        static info() {
+            console.log('This is a class to create planets!');
+        }
+
+        get getName() {
+            console.log(`My name is ${this.name}!`);
+        }
+
+        set setName(value) {
+            this.name = value;
+        }
+    }
+
+    const mars = new Planet('mars', 'red');
+    Planet.info()
+    mars.getName
+    mars.setName = 'spacex'
+    mars.getName
+
+    // console.log(mars.getName);
+    // console.log(mars);
+    // const earth = new Planet('earth', 'blue');
+</script>
+
+</html>

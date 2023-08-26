@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Variables</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    //var and let
+    var animal = 'cat';
+    console.log(animal); 
+    
+    {
+        let animal = 'dog';
+        console.log(animal);
+        {
+            animal = 'pato'
+            console.log(animal);
+        }
+        console.log(animal);
+    }
+    
+    console.log(animal);
+
+    //const
+    const secretNumber = 28;
+    console.log(secretNumber)
+    // secretNumber = 12
+    const will = {
+        name: 'Willian',
+        age: 53
+    };
+
+    //avoid to change the var value
+    Object.freeze(will);
+
+    will.age = 26;
+
+    console.log(will);
+</script>
+
+</html>

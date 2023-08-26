@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Scope</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    let sound = 'meow';
+
+    var animal;
+
+    function sayAnimal() {
+        animal = 'cat';
+        console.log(animal);
+        sound = 'buh';
+        console.log(sound);
+    }
+
+    sayAnimal();
+    console.log(animal);
+    console.log(sound);
+
+    const animalNickname = 'jake';
+</script>
+
+</html>

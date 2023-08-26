@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spread Operator</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    function sayTheBest(langA, langB, langC) {
+        return `the ${langA} is better than ${langB} and better than ${langC}!`;
+    }
+
+    let front = ['react', 'vue', 'angular'];
+    let back = ['python', 'ruby', 'nodejs'];
+
+    // let fullStack = [];
+    // fullStack = fullStack.concat(front);
+    // fullStack.push('RxJS');
+    // fullStack = fullStack.concat(back);
+    // 
+    let fullStack = [...front, 'RxJS', ...back];
+
+    console.log(fullStack)
+    let [a, b, ...rest] = fullStack;
+    console.log(rest)
+
+
+    console.log(sayTheBest(...front));
+    console.log(sayTheBest(front[0], front[1], front[2]));
+
+
+</script>
+
+</html>
