@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spread Operator Obj</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    let {
+        x,
+        ...remaining
+    } = {
+        x: 1,
+        a: 2,
+        b: 3,
+        c: 4
+    };
+    console.info('x', x); // 1
+    console.info('remaining', remaining); // {a: 2, b: 3, c: 4}
+
+    const objRef = {
+        x: 1,
+        foo: () => {}
+    }
+
+    let {
+        ...shallowClone
+    } = objRef;
+    // const shallowClone = objRef;
+
+    shallowClone['x'] = 3;
+    console.info('objRef', objRef); // {x: 1, foo: ƒ}
+    console.info('shallowClone', shallowClone); // {x: 1, foo: ƒ}
+
+
+
+
+    let nestedObject = {
+        x: [1, 2, 3],
+        y: {
+            a: 4,
+            b: 5,
+            foo: () => {}
+        }
+    };
+
+    let {
+        x: [x1, x2, x3, x4, ...remainingb],
+        ...allRemaining
+    } = nestedObject;
+
+    console.info(x1); // 1
+    console.info('remainingb', remainingb); // [2, 3]
+    console.info('remainingb', x4); // [2, 3]
+    console.info('allRemaining', allRemaining); // {y: {a: 4, b: 5, foo: ƒ}}
+</script>
+
+</html>
