@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teste de Velocidade de Digitação em JS</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="masthead">
+        <h1>Teste a sua velocidade de digitação</h1>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <p> Este é um teste de digitação. Seu objetivo é duplicar o texto fornecido, EXATAMENTE, no campo abaixo. O timer inicia quando você começa a digitar e só para quando o seu texto estiver idêntico ao original. Boa sorte! </p>
+        </section>
+        <!-- .intro -->
+        <section class="test-area">
+            <div id="origin-text">
+                <p>Este é um teste de digitação. Seu objetivo é duplicar o texto fornecido, EXATAMENTE, no campo abaixo. O timer inicia quando você começa a digitar e só para quando o seu texto estiver idêntico ao original. Boa sorte!</p>
+            </div>
+            <!-- #origin-text -->
+
+            <div class="test-wrapper">
+                <textarea id="test-area" name="textarea" rows="6" placeholder="O timer começa quando você começar a digitar."
+                onpaste="return false" ondrop="return false"></textarea>
+            </div>
+            <!-- .test-wrapper -->
+
+            <div class="meta">
+                <section id="clock">
+                    <div class="timer">00:00:00</div>
+                </section>
+
+                <button type="button" id="reset">Começar novamente</button>
+            </div>
+            <!-- .meta -->
+        </section>
+        <!-- .test-area -->
+    </main>
+</body>
+
+</html>

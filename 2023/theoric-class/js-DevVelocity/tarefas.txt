@@ -1,0 +1,14 @@
+[ok] Tarefa 1
+- Criar um controle para avaliar se o texto digitado é o texto gabarito
+
+[ok] Tarefa 2
+- criar um controle para contar o tempo entre a primeira tecla, até a condição de retorno.
+
+[ok] Tarefa 3
+- implementar a lógica do botão de reset;
+
+[ok] Tarefa 4
+- bloquear a possibilidade de colar texto no campo
+
+[ok] Tarefa 5
+- Adicionar mais de um gabarito para ter textos distintos
