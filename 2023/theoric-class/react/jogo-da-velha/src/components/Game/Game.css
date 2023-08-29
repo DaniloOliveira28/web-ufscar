@@ -1,0 +1,13 @@
+.game {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+
+.game-board {
+    margin: 16px
+}
+
+.panel {
+    margin: 8px;
+}
